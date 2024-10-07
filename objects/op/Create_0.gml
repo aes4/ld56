@@ -1,7 +1,9 @@
 /* quick tdl
-make mgrace cleaner make owall way bigger
 work on deaths and win
+death from pond breaks game
+pond is done though next tree
 */
+randomize()
 rv = false
 cont = false
 start = false

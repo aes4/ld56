@@ -103,6 +103,53 @@ if win {
     }
     // stats appear
 }
+/*
+if go {
+    if cammc > 0 {
+        ogecko.x += 30
+        cam = view_camera[0]
+        camx = camera_get_view_x(cam)
+        camy = camera_get_view_y(cam)
+        camx += 30
+        camera_set_view_pos(cam, camx, camy)
+        cammc -= 30
+    } else {
+        if cammc > -2800 {
+            ogecko.x += 30
+            cammc -= 30
+            if 2840 < cammc < 2885 {
+                if armourstat > 3 {
+                    if swimstat < 4 {
+                        instance_create_layer(6300, 0, "Instances", opond)
+                        if ogecko.y < 2800 {
+                            ogecko.y += 9
+                        }
+                    } else {
+                        instance_create_layer(10500, 10, "Instances", otree)
+                    }
+                }
+            }
+        } else {
+            go = false
+            if armourstat < 4 {
+                // birdswoop
+                instance_create_layer(11520, -100, "Instances", obird)
+            } else if swimstat < 4 {
+                // pond
+            } else if speedstat < 4 || fort < 3 {
+                // tree
+            } else {
+                // win
+                if win == false {
+                    room_goto(credits)
+                    win = true
+                    et = false
+                }
+            }
+        }
+    }
+}
+*/
 if go {
     if cammc > 0 {
         ogecko.x += 30
@@ -114,17 +161,17 @@ if go {
         cammc -= 30
     } else {
         go = false
-        if armourstat < 5 || swimstat < 5 || speedstat < 4 || fort < 4 {
+        if armourstat < 3 {
             // birdswoop
             instance_create_layer(11520, -100, "Instances", obird)
-        } else {  // win
-            if win == false {
-                room_goto(credits)
-                win = true
-                et = false
-            }
-        }
-        if speedstat == 0 {
+        } else if swimstat < 3 {
+            // pond
+            instance_create_layer(11520, -100, "Instances", obird)
+        } else if speedstat < 3 || fort < 1 {
+            // tree
+            instance_create_layer(11520, -100, "Instances", obird)
+        } else {
+            // win
             if win == false {
                 room_goto(credits)
                 win = true
@@ -133,10 +180,11 @@ if go {
         }
     }
 }
-if armourstat = 5 {
+/*
+if armourstat = 4 {
     instance_destroy(obtarmour)
 }
-if swimstat = 5 {
+if swimstat = 4 {
     instance_destroy(obtswim)
 }
 if speedstat = 4 {
@@ -145,6 +193,7 @@ if speedstat = 4 {
 if fortstat = 4 {
     instance_destroy(obtfort)
 }
+*/
 if mgarmour {
     //todo
 }
