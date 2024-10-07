@@ -24,6 +24,8 @@ if op.mgswim {
         sprite_index = sgeckol
     } else { sprite_index = sgeckor }
     if y > 1620 {
+        //i = audio_play_sound(as, 1, false)
+        //audio_sound_gain(i, op.vol, 0)
         swimcount += 1
         if swimcount > 600 {
             op.swimstat += 1
@@ -41,6 +43,10 @@ if op.mgrace {
     ss = keyboard_check_pressed(vk_space)
     c = keyboard_check(vk_shift)
     h = (r - l) * dh
+    if ss {
+        i = audio_play_sound(aj, 1, false)
+        audio_sound_gain(i, op.vol, 0)
+    }
     if thh {
         h = (r - l) * dh * hh
         hh += 1/400
@@ -78,6 +84,8 @@ if op.mgrace {
     x += h
     y += v
     if x > 10000 {  // <- good number?
+        i = audio_play_sound(ac, 1, false)
+        audio_sound_gain(i, op.vol, 0)
         op.speedstat += 1
         room_goto(jungle)
         op.js = true
@@ -122,6 +130,8 @@ if op.mgfort {
         sprite_index = sgeckotr
     }
     if place_meeting(x, y, obook) {
+        i = audio_play_sound(ac, 1, false)
+        audio_sound_gain(i, op.vol, 0)
         op.collectedbooks += 1
         instance_destroy(obook)
         randx = random_range(0, 5760)

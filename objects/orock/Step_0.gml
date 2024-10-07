@@ -3,6 +3,8 @@ if !iscollected {
         y += 15
         if op.collectedrocks < 5 {
             if place_meeting(x, y, ogecko) {
+                i = audio_play_sound(ag, 1, false)
+                audio_sound_gain(i, op.vol, 0)
                 iscollected = true
                 op.collectedrocks += 1
                 op.mgarmourscore += 1  // using way too many vars but idc

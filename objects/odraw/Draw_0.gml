@@ -10,5 +10,10 @@ if instance_exists(ocredits) {
         m = floor(op.tt div 60)
         s = op.tt mod 60
         draw_text_transformed(2880 + 256, 1620, "time: " + string(m) + ":" + string_format(s, 2, 0), 8, 8, 0)
+        //i = audio_play_sound(av, 1, false)
+        //audio_sound_gain(i, op.vol, 0)
     }
+}
+if op.dvol == true {
+    draw_text_transformed(3780, 1400, "Volume:" + string(op.vol * 100) + "%", 7, 7, 0)
 }

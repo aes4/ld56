@@ -31,6 +31,8 @@ if op.oof {
 }
 /*
 if op.oof {
+    i = audio_play_sound(at, 1, false)
+    audio_sound_gain(i, op.vol, 0)
     move_towards_point(11520/2, -100, 30)
     ogecko.x = x - 100
     ogecko.y = y + 200

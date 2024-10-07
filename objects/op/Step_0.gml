@@ -7,8 +7,19 @@ if js {
     js = false
 }
 if cont {
+    dvol = true
+    aud = audio_play_sound(amm, 1, true)
+    audio_sound_gain(aud, vol, 0)
     room_goto(mm)
     cont = false
+}
+if circle {
+    obslidercircle.x = mouse_x
+    if 2942 < obslidercircle.x && obslidercircle.x < 5200 {
+        vol = (obslidercircle.x - 2942) / (5200 - 2942)
+        audio_sound_gain(aud, vol, 0)
+    }
+    circle = false
 }
 if rv {
     //todo
@@ -17,23 +28,25 @@ if et {
     tt += 1 / room_speed
 }
 if start {
+    dvol = false
+    audio_stop_sound(aud)
+    audd = audio_play_sound(amain, 2, true)
+    audio_sound_gain(audd, vol, 0)
     et = true
     room_goto(jungle)
     js = true
     start = false
 }
-if setting {
-    room_goto(settings)
-    setting = false
-}
 if quit { game_end() }
 if keyboard_check(vk_escape) { game_end() }
 if inc {
-    //todo
+    vol += 0.1
+    audio_sound_gain(aud, vol, 0)
     inc = false
 }
 if dec {
-    //todo
+    vol -= 0.1
+    audio_sound_gain(aud, vol, 0)
     dec = false
 }
 if tarmoursd {  // step delay
