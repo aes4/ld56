@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obdec",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obdec",
   "overriddenProperties":[],
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sdec",
+    "path":"sprites/sdec/sdec.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"squit",
   "bboxMode":0,
-  "bbox_bottom":0,
+  "bbox_bottom":533,
   "bbox_left":0,
-  "bbox_right":0,
+  "bbox_right":1181,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"177fe903-ad82-47b9-8a34-46c61f9eae7c","name":"177fe903-ad82-47b9-8a34-46c61f9eae7c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"bdcb1645-cceb-4831-bd39-d70d0b3940c1","name":"bdcb1645-cceb-4831-bd39-d70d0b3940c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":534,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ea0eba85-73c0-4544-894a-490e64c984a5","blendMode":0,"displayName":"default","isLocked":false,"name":"ea0eba85-73c0-4544-894a-490e64c984a5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"03e5cbe7-5a2f-4334-9ff2-f033a0d99f03","blendMode":0,"displayName":"default","isLocked":false,"name":"03e5cbe7-5a2f-4334-9ff2-f033a0d99f03","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"squit",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"177fe903-ad82-47b9-8a34-46c61f9eae7c","path":"sprites/squit/squit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"54923a4e-3a02-4d72-aa8b-dd3cd46eaaa8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bdcb1645-cceb-4831-bd39-d70d0b3940c1","path":"sprites/squit/squit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5e261c1e-a0bd-4bea-9a59-dc8160d51e8b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":1182,
 }

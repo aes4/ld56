@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sslidercircle",
+    "path":"sprites/sslidercircle/sslidercircle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

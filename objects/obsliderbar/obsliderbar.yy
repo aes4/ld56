@@ -27,7 +27,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"ssliderbar",
+    "path":"sprites/ssliderbar/ssliderbar.yy",
+  },
+  "spriteMaskId":{
+    "name":"ssliderbar",
+    "path":"sprites/ssliderbar/ssliderbar.yy",
+  },
   "visible":true,
 }
